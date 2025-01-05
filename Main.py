@@ -1,10 +1,8 @@
 from flask import Flask, jsonify
 
-# Inisialisasi Flask
 app = Flask(__name__)
 
-# Endpoint untuk menampilkan informasi pembuat
-@app.route('/creator', methods=['GET'])
+@app.route('/me', methods=['GET'])
 def get_creator_info():
     creator_info = {
         "name": "anto",  
